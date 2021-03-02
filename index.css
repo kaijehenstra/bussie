@@ -1,0 +1,11 @@
+body {
+    background-color: darkblue;
+    text-align: center;
+}
+
+footer {
+  position: absolute;
+  padding-top: 20%;
+  width: 100%;
+  height: 2.5rem;
+}
