@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: bussie-web
-        image: bussie/website
+        image: kaijehenstra/bussie
         ports:
         - containerPort: 80
