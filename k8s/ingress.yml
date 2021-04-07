@@ -4,7 +4,7 @@ metadata:
   name: bussie-webingress
 spec:
   rules:
-  - host: doemijmaareenbussiewaareenautoachteropkan.nl
+  - host: '*.doemijmaareenbussiewaareenautoachteropkan.nl'
     http:
       paths:
       - path: /
