@@ -1,0 +1,12 @@
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: bussie-webcert
+  namespace: default
+spec:
+  dnsNames:
+    - doemijmaareenbussiewaareenautoachteropkan.nl
+  secretName: bussie-webtls
+  issuerRef:
+    name: letsencrypt-cluster-issuer
+    kind: ClusterIssuer

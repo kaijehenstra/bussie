@@ -3,8 +3,12 @@ kind: Ingress
 metadata:
   name: bussie-webingress
 spec:
+  tls:
+  - hosts:
+    - doemijmaareenbussiewaareenautoachteropkan.nl
+    secretName: bussie-webtls
   rules:
-  - host: '*.doemijmaareenbussiewaareenautoachteropkan.nl'
+  - host: doemijmaareenbussiewaareenautoachteropkan.nl
     http:
       paths:
       - path: /
