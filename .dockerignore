@@ -1,0 +1,11 @@
+/node_modules
+
+/build
+
+/k8s
+
+.git
+
+*.md
+
+.gitignore

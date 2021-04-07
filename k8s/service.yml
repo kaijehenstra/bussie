@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: bussie-webservice
+spec:
+  selector:
+    app: bussie-web
+  ports:
+    - port: 80 # Default port for image

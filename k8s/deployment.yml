@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bussie-web
+  labels:
+    app: bussie-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: bussie-web
+  template:
+    metadata:
+      labels:
+        app: bussie-web
+    spec:
+      containers:
+      - name: bussie-web
+        image: bussie/website
+        ports:
+        - containerPort: 80
