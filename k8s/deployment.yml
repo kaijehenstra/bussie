@@ -17,5 +17,6 @@ spec:
       containers:
       - name: bussie-web
         image: kaijehenstra/bussie
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
