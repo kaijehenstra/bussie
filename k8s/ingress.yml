@@ -1,12 +1,13 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: bussie-webingress
+  name: bussie-web-ingress
+  namespace: bussie-web-ns
 spec:
   tls:
   - hosts:
     - doemijmaareenbussiewaareenautoachteropkan.nl
-    secretName: bussie-webtls
+    secretName: bussie-web-tls
   rules:
   - host: doemijmaareenbussiewaareenautoachteropkan.nl
     http:
@@ -15,6 +16,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            name: bussie-webservice
+            name: bussie-web-service
             port:
               number: 80
