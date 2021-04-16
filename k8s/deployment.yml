@@ -6,6 +6,11 @@ metadata:
   labels:
     app: bussie-web
 spec:
+  strategy:
+    rollingUpdate:
+      maxSurge: 30%
+      maxUnavailable: 0
+    type: RollingUpdate
   replicas: 1
   selector:
     matchLabels:
