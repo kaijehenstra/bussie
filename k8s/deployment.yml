@@ -24,5 +24,12 @@ spec:
       - name: bussie-web
         image: kaijehenstra/bussie
         imagePullPolicy: Always
+        resources:
+          limits:
+            memory: 350Mi
+            cpu: "0.25"
+          requests:
+            memory: 300Mi
+            cpu: "0.1"
         ports:
         - containerPort: 80
