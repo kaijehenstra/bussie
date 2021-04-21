@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
       - name: bussie-web
-        image: kaijehenstra/bussie:v1
+        image: kaijehenstra/bussie:1.0.1
         imagePullPolicy: Always
         resources:
           requests:
